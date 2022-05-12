@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800&display=swap');
+
+/* -------------Base Styling ----------------- */
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin-top: 2.6rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #000;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 2.6rem 0;
+    color: whitesmoke;
+}
+
+img {
+    width: 200%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+/*-------------- Hero Section  -------------  */
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    color: #4caf50;
+}
+
+nav {
+    margin: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 3.9rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+nav ul li a:hover {
+    color: #c6cfc6;
+    transition: .4s;
+}
+
+.fa-bars {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 3.9rem;
+    display: none;
+}
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 6%;
+}
+
+.header-content h2 {
+    color: whitesmoke;
+}
+
+.header-content p {
+    color: whitesmoke;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.4rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 1.4% 1%;
+    margin: 1.2% 0;
+    display: block;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 2% 1%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(6, 73, 6);
+    transition: .6s;
+    color: gray;
+}
+
+
+/* ----------------  About ------------- */
+
+.about-left,
+.about-middle,
+.about-right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.about-left h2 {
+    color: #000;
+    margin-bottom: 20px;
+    vertical-align: text-top;
+}
+
+.about-left img {
+    width: 100%;
+}
+
+.about-middle h2,
+p {
+    color: #000;
+}
+
+.about-right h2,
+p {
+    color: #000;
+    text-align: justify;
+}
+
+.btn {
+    background-color: gray;
+    padding: 10px 10px;
+    border-radius: 10px 40%;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    padding: 10px 10px;
+    border-radius: 10px 40%;
+    transition: .6s;
+    border: none;
+}
+
+
+/* --------------  About 2 ---------  */
+
+.about2 {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.about2-left {
+    flex-basis: 50%;
+}
+
+.about2-left h2 {
+    color: whitesmoke;
+}
+
+.about2-left button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.about2-left button a {
+    color: #000;
+}
+
+.about2-left button:hover {
+    background-color: gray;
+    transition: .6s;
+}
+
+.about2-right {
+    flex-basis: 30%;
+}
+
+.about2 .card {
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #DCDCDC;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+.about2 .card h2 {
+    color: #000;
+    font-size: 20px;
+}
+
+.about2 p {
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.about2 .card i {
+    font-size: 30px;
+    color: #4CAF50;
+}
+
+
+/*---------------Process--------------------*/
+
+.process {
+    justify-content: center;
+}
+
+.process-content {
+    margin: 100px;
+}
+
+.our-process {
+    margin: auto;
+    margin-top: 60px;
+}
+
+.progress-bar {
+    width: 90%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #222;
+    position: absolute;
+}
+
+.progress-bar .c1 {
+    top: -8px;
+    left: 50px;
+}
+
+.progress-bar .c2 {
+    top: -8px;
+    left: 50%;
+}
+
+.progress-bar .c3 {
+    top: -8px;
+    right: 50px;
+}
+
+.box1,
+.box2,
+.box3 {
+    padding: 1.8rem;
+    color: #4CAF50;
+}
+
+.box1,
+.box2,
+.box3,
+h2 {
+    color: #4CAF50;
+}
+
+.process .box2 {
+    text-align: center;
+}
+
+.process .box3 {
+    text-align: right;
+}
+
+
+/*------------------Testimonial----------------*/
+
+.testimonial {
+    background-color: #222;
+    color: whitesmoke;
+}
+
+.testimonial .test {
+    background-color: #505050;
+    padding: 4rem 8rem;
+    margin: 0 1rem;
+}
+
+.testimonial .image {
+    height: 80px;
+    width: 80px;
+}
+
+.testimonial img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.test-content p {
+    color: whitesmoke;
+}
+
+.fa-star-half-stroke,
+.fa-star {
+    font-size: 16px;
+    padding-top: 10px;
+    letter-spacing: 5px;
+}
+
+
+/*-----------Contact---------------*/
+
+.contact .row {
+    justify-content: center;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input {
+    border: 1px solid #000;
+    width: 50%;
+}
+
+.contact textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #000;
+    font-size: 1.3rem;
+    resize: none;
+    color: #bbb;
+    margin: 1.2rem 0;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #4CAF50;
+    width: 50%;
+    padding: 5px 5px;
+    border: none;
+    font-size: 2rem;
+    resize: none;
+    color: #000;
+    margin: 1.2rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: rgb(94, 199, 94);
+    transition: .6s;
+}
+
+
+/*----------Footer-------------*/
+
+footer {
+    height: 30px;
+    background-color: #222;
+}
+
+footer p {
+    color: whitesmoke;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+    .fa-bars {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 32px;
+    }
+    nav ul {
+        margin-top: 0;
+        background-color: whitesmoke;
+        display: none;
+    }
+    .showmenu {
+        display: block;
+    }
+    nav ul li {
+        padding: 2% 0;
+        display: block;
+    }
+    nav ul a {
+        color: gray;
+    }
+    /*-------header content-----------*/
+    .header-content {
+        width: 100%;
+        top: 16%;
+        left: 0;
+        text-align: center;
+        padding: 0 8px;
+        position: absolute;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=submit] {
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+    .progress-bar {
+        display: none;
+    }
+    .process .box1,
+    .process .box2,
+    .process .box3 {
+        text-align: center;
+    }
+    .fa-star-half-stroke,
+    .fa-star {
+        font-size: 14px;
+    }
+    .contact form input,
+    .contact textarea {
+        width: 100%;
+    }
+}
